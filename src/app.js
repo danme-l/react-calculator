@@ -46,6 +46,8 @@ class Calculator extends React.Component {
 
     calculate = () => {
         this.setState({
+            // I know eval() shouldn't be used 
+            // eslint-disable-next-line
             calc: eval(this.state.calc).toString(),
         });
     };

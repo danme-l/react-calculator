@@ -1,5 +1,7 @@
 :root {
     font-size: 20px;
+    --main-color: lightblue;
+    --second-color: darkslateblue;
 }
 
 html {
@@ -18,7 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 15px solid red;
+    border: 15px solid var(--main-color);
     padding: 10px;
     border-radius: 15px;
     height: 500px;
@@ -26,13 +28,13 @@ body {
 
 #display {
     color: white;
-    background-color: gray;
+    background-color: var(--second-color);
     font-family: 'Courier New', Courier, monospace;
     text-align: right;
     width: 89%;
     height: 10%;
     margin: 10px;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
     border-radius: 5px;
     word-wrap: break-word;
     word-break: break-all;
@@ -65,11 +67,12 @@ body {
 
 .btn {
     padding: 20px;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
     border-radius: 5px;
     font-size: 20px;
 }
   
 .btn:hover {
-    background-color: darkred;
+    color: white;
+    background-color: var(--second-color);
 }
